@@ -69,7 +69,7 @@ export default function App() {
         />
         <fog attach="fog" args={['#cc7b32', 16, 20]} />
         <Suspense fallback={null}>
-          <Model url="/public/scene.gltf" />
+          <Model url="/scene-draco.gltf" />
         </Suspense>
         <OrbitControls
           autoRotate
