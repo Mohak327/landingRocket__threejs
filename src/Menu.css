@@ -1,0 +1,25 @@
+.menu {
+    top: 60px;
+    right: 60px;
+    width: 25px;
+    height: 25px;
+    background: url(images/menu.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 10000;
+  }
+
+  .close {
+    top: 60px;
+    right: 60px;
+    width: 25px;
+    height: 25px;
+    background: url(images/close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 10000;
+  }

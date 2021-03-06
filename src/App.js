@@ -4,6 +4,7 @@ import { Canvas, useLoader } from 'react-three-fiber'
 import { useTransition, a } from 'react-spring'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { OrbitControls, draco } from 'drei'
+import Menu from './Menu'
 
 function Model({ url }) {
   const { nodes, materials } = useLoader(GLTFLoader, url, draco())
@@ -50,9 +51,9 @@ export default function App() {
     <>
       <div className="bg" />
       <h1>
-        LEARN
+        SPACE
         <br />
-        <span>w/JASON</span>
+        <span>PARADE</span>
       </h1>
       <Canvas shadowMap camera={{ position: [0, 0, 15] }}>
         <ambientLight intensity={0.75} />
@@ -84,9 +85,9 @@ export default function App() {
       </Canvas>
       <div className="layer" />
       <Loading />
-      <a href="https://github.com/drcmda/learnwithjason" className="top-left" children="Github" />
-      <a href="https://twitter.com/0xca0a" className="top-right" children="Twitter" />
-      <a href="https://github.com/drcmda/react-three-fiber" className="bottom-left" children="+ react-three-fiber" />
+      <a href="https://github.com/Mohak327" className="top-left" children="Github" />
+      <Menu />
+      <a href="https://github.com/drcmda/react-three-fiber" className="bottom-left" children="Contact Me" />
     </>
   )
 }
